@@ -20,6 +20,23 @@ body{
     grid-area: img;
     background-color:blue;
     background-image: url(/:img/banner.png);
+    padding: 30px;
+}
+
+.img h1{ 
+    font-family: 'Pacifico', cursive;
+    font-size: 30pt;
+    color:white;
+}
+
+.img h3{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+
+}
+.dot{
+    color:#5ca32f;
 }
 
 .branco {
@@ -52,9 +69,11 @@ footer a{
     color: #5d5f63;
     padding:10px;
     font-size: 15pt;
-    margin-left: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 30px;
     display: inline-block;
     line-height: normal;
     vertical-align:middle;
+    font-family: 'Raleway', sans-serif;
 }
