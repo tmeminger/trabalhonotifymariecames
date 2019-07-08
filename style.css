@@ -7,7 +7,7 @@ body{
                             'fotos fotos fotos'
                             'social social social'
                             'footer footer footer';
-    grid-template-rows: 1vh 56vh 18vh 25vh 13vh 13vh 12vh;
+    grid-template-rows: 1vh 56vh 18vh 25vh 13vh 19vh 10vh;
     grid-template-columns: 33vw 33vw 33vw;
 }
 
@@ -19,6 +19,7 @@ body{
 .img{
     grid-area: img;
     background-color:blue;
+    background-size: cover;
     background-image: url(img/banner.png);
     padding: 30px;
 }
@@ -37,8 +38,8 @@ span{
     color: #5ca32f;
 }
 
-.hand{ 
-   margin-left: 1050px;
+.hand { 
+   margin-left: 600px;
    position: relative;
    top: -237px; 
 }
@@ -52,6 +53,7 @@ span{
 
 .icons{
     position: relative;
+    size: 60px;
 }
 
 .branco {
@@ -62,10 +64,16 @@ span{
 .cinza{ 
     grid-area: cinza;
     background-color: #d5d8de;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 .cinza h2, h4{
     margin-left: 60px;
+}
+
+.cinza h4{
+    color: grey;
 }
 
 .input{
@@ -85,33 +93,63 @@ span{
     color: white;
     width: 70px;
     height:40px;
+    font-size:15pt;
 }
-
+::placeholder{
+    font-size: 15pt;
+    color: lightslategray;
+    text-align:center;
+}
 .textofotos{
     grid-area:fotos;
     height: 60px;
+    text-align:center;
+    font-family: 'Raleway', sans-serif;
 }
 
+.textofotos h4{
+    font-style: italic;
+    color: grey;
+}
+
+.textofotos p{
+    font-weight: bold;
+}
+.textofotos img {
+    height: 32px;
+    width: 32px;
+}
+
+.fotos:hover{ 
+    
+}
 .socialmedia{
     grid-area: social;
-    background-color: greenyellow;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.botoessocial:hover{
+    padding: 5px;
+}
+
+.socialmedia h1 {
+
+
 }
 
 footer{
     grid-area:footer;
     background-color:#d5d8de;
+   text-align: center;
 }
 
 footer a{
     text-decoration: none;
     color: #5d5f63;
-    padding:10px;
-    font-size: 15pt;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 30px;
+    padding:30px;
+    vertical-align:middle;
     display: inline-block;
     line-height: normal;
-    vertical-align:middle;
     font-family: 'Raleway', sans-serif;
 }
