@@ -7,7 +7,7 @@ body{
                             'fotos fotos fotos'
                             'social social social'
                             'footer footer footer';
-    grid-template-rows: 1vh 27vh 18vh 20vh 11vh 11vh 10vh;
+    grid-template-rows: 1vh 56vh 18vh 20vh 13vh 13vh 12vh;
     grid-template-columns: 33vw 33vw 33vw;
 }
 
@@ -25,18 +25,22 @@ body{
 
 .img h1{ 
     font-family: 'Pacifico', cursive;
-    font-size: 30pt;
+    font-size: 50pt;
     color:white;
 }
 
+span{
+    color: #5ca32f;
+}
+
+.hand{ 
+    align-content: 
+}
 .img h3{
     color: white;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 
-}
-.dot{
-    color:#5ca32f;
 }
 
 .branco {
