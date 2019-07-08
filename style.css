@@ -19,7 +19,7 @@ body{
 .img{
     grid-area: img;
     background-color:blue;
-    background-image: url(:img/banner.png);
+    background-image: url(img/banner.png);
     padding: 30px;
 }
 
