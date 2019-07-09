@@ -7,7 +7,7 @@ body{
                             'fotos fotos fotos'
                             'social social social'
                             'footer footer footer';
-    grid-template-rows: 1vh 56vh 18vh 25vh 13vh 19vh 10vh;
+    grid-template-rows: 1vh 56vh 20vh 25vh 13vh 19vh 10vh;
     grid-template-columns: 33vw 33vw 33vw;
 }
 
@@ -18,8 +18,7 @@ body{
 
 .img{
     grid-area: img;
-    background-color:blue;
-    background-size: cover;
+    background-size:cover;
     background-image: url(img/banner.png);
     padding: 30px;
 }
@@ -40,6 +39,7 @@ span{
 
 .hand { 
    margin-left: 600px;
+   margin-right: 500px;
    position: relative;
    top: -237px; 
 }
@@ -52,15 +52,54 @@ span{
 }
 
 .icons{
+        width: 60px;
+        height: 60px;
+        background-color: black;
+        opacity: 0.7;
+        border-radius: 50%;
+        display: inline-flex;
+        margin: 10px;
+}
+
+
+.video { 
+    margin-left: 800px;
+    margin-right: 500px;
     position: relative;
-    size: 60px;
+    top: -180px;
+    
 }
 
 .branco {
     grid-area: branco;
-    background-color: black;
+   justify-content: center;
+   font-family: 'Raleway', sans-serif;
+   display: grid;
+   grid-template-areas: 'b1 b2 b3';
+   grid-template-columns: 33% 33% 33%;
+   text-align: center;
 }
 
+.iconb{
+    background-color: #5ca32f;
+    border-radius: 50%;
+}
+
+.b1{ 
+    grid-area: b1;
+}
+
+.b2 {
+    grid-area: b2;
+}
+
+.b3{ 
+    grid-area: b3;
+}
+
+.branco h4{
+    color:grey;
+}
 .cinza{ 
     grid-area: cinza;
     background-color: #d5d8de;
@@ -94,6 +133,7 @@ span{
     width: 70px;
     height:40px;
     font-size:15pt;
+    border-radius:10%;
 }
 ::placeholder{
     font-size: 15pt;
@@ -121,7 +161,8 @@ span{
 }
 
 .fotos:hover{ 
-    
+    filter: blur(80%);
+    padding: 2px;
 }
 .socialmedia{
     grid-area: social;
